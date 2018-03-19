@@ -1,0 +1,11 @@
+{
+    "server":{
+        "selected": "localhost",
+        "localhost":{
+            "host": "localhost",
+            "port": "3000",
+            "livereload": "35729",
+            "src": "./"
+        }
+    }
+}

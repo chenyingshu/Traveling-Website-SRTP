@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>数据可视化</title>
+	<script src="/javascripts/gallery/jquery.min.js"> </script>
+	<link href="/stylesheets/gallery/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="/stylesheets/gallery/datavizstyle.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="javascripts/gallery/move-top.js"></script>
+		<script type="text/javascript" src="javascripts/gallery/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+ 	<!---- start-smoth-scrolling---->
+</head>
+<body>
+<!------headerbg starts--------->
+ <div id="top-top" class="headerbg">
+	 <!------header starts--------->
+	   <div class="header">
+		 <!------container starts--------->
+			  <div class="container">
+				   <div class="logo">
+						<a href="#">数据指南</a>
+				   </div>
+				  <!------Navigation starts--------->
+				  <div class="nav">
+					 <ul>
+						 <li><a class="scroll" href="#about">介绍</a></li>
+						 <li><a class="scroll" href="#skills">热度图</a></li>
+						 <li><a class="scroll" href="#port">人流量</a></li>
+						 <li><a class="scroll" href="#contact">天气</a></li>
+					 </ul>
+				 </div>
+				  <!------Navigation ends-------->
+					<div class="clear"></div>
+			  </div>
+		 <!------container ends--------->
+	   </div>
+	 <!------header ends--------->
+	 <!------Banner starts--------->
+	   <div class="banner">
+	      <div class="container">
+		     <div class="banner-info">			      
+			      <div class="bannerhead">
+				      <h2>数据可视化图表</h2>
+				      <h3>直观地观察庞杂的数据</h3>
+				      <!--p>数据可视化的目的，是要对数据进行可视化处理，以使得能够明确地、有效地传递信息。— Vitaly Friedman</p-->
+					  <a class="downarrow scroll" href="#about"><span> </span></a>
+			      </div>
+			 </div>
+			 <div class="clear"></div>
+		  </div>
+	  </div>
+	  <!------Banner ends-------->
+ </div>
+ <!------Headerbg ends-------->
+ <!------Content starts--------->
+ <div class="content">
+	 <!------About starts--------->
+	   <div id="about" class="about">
+		 <div class="container">
+			   <div class="header-section text-center">
+				  <h2><span> </span>介绍<span> </span></h2>
+				  </div>
+				 <span><p>数据可视化的目的，是要对数据进行可视化处理，以使得能够明确地、有效地传递信息。— Vitaly Friedman</p></span>
+					 
+			  <div class="years">	 
+				<h4><b>热度图</b></h4>
+				 <span><h4>展示杭州各景点的热门程度</h4></span>
+				 <p><i>用气泡图反映景点热门程度，鼠标悬停可显示景点信息，
+                    气泡高度表示评分高低，大小表示参评人数，可以助您选择景点。P.S尝试用鼠标框选或选择不同种类观察！</i></p>
+			  </div> 
+				
+			  <div class="years">	 		
+				 <h4><b>人流量</b></h4>
+				 <span><h4>表示杭州各季度游客数量</h4></span>
+				 <p><i>表示杭州各季度游客数量，可以助您选择热门季节或是避开高峰期。P.S尝试在右上角选择不同类别进行观察！</i></p>
+			  </div> 
+					
+			   <div class="years">	 	
+				 <h4><b>天气</b></h4>
+				 <span><h4>反映杭州各月份天气状况</h4></span>
+				 <div class="labs">
+					 <p><i>展示杭州各月份天气状况，可以助您选择合适的旅游季节。P.S尝试选择不同类别进行观察！</i></p>
+			     </div>
+			  </div>
+				 <a class="arrow scroll" href="#skills"><span> </span></a>
+		  </div>
+	  </div>
+	 <!------About Ends--------->
+	 
+	<!------SKILLS Starts--------->
+	  <div id="skills" class="skills">
+	  <div class="container">
+	     <div class="skills-grids">
+			  <div class="skill-section text-center">
+				  <h2><span> </span>热度图<span> </span></h2>
+			  </div>
+					  <div class="services_grids">
+						  <div id="canvas">
+<script src="javascripts/gallery/highcharts.js"></script>
+<script src="javascripts/gallery/highcharts-more.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('#container1').highcharts({
+
+        chart: {
+            type: 'bubble',
+            zoomType: 'xy'
+        },
+
+        title: {
+            text: '景点热度图',
+			style:{
+				color: '#FFF'
+			}
+        },
+		
+		tooltip: {
+            formatter: function () {
+				//var names=new array();
+				var names=['无','西湖','千岛湖','钱塘江','三潭印月','孤山','浙西大峡谷','湘湖','飞来峰','大明山','平湖秋月','富春江','天目山','印象西湖','京杭大运河','西溪湿地东区','新安江','萧山','太湖源','北高峰','灵隐寺','浙江大学','岳王庙','六和塔','南山路','南宋御街','胡雪岩故居','吴山广场','武林广场','风波亭','湖心亭','杭州博物馆','中国伞博物馆','中国扇博物馆','杭州南宋官窑博物馆','江南水乡博物馆','良渚博物院','浙江省博物馆','杭州自然博物馆','中国茶叶博物馆','中国丝绸博物馆','大韩民国临时政府杭州旧址纪念馆','苏东坡纪念馆','于谦祠','雷峰塔','宋城','九溪十八涧','杭州动物园','断桥','苏堤','清河坊','瑶琳仙境','柳浪闻莺','白堤','虎跑梦泉','南屏晚钟','西湖音乐喷泉','宝石流霞','吴山天风','灵山幻境','黄龙体育中心'];
+                return '<b>' + names[this.x] +
+                    '</b>  <br>' + '评分：'+ this.y;
+            }
+        },
+        yAxis: {
+            title: {
+                text: '评分'
+            }
+        },
+		credits:{
+			enabled:false // 禁用版权信息
+		},
+		
+        series: [{
+            name: '自然景点',
+            data: [[1, 4.5, 3604], [2, 4.2, 986], [3, 4.3, 793], [4, 4.3, 740], [5, 4.2, 337], [6, 4.3, 94], [7, 4.1, 174], [8, 4.1, 367], [9, 4.3, 72], [10, 4.3, 200], [11, 3.9, 77], [12, 4.1, 73], [13, 4.2, 77], [14, 4.3, 279], [15, 4.1, 44], [16, 4.0, 56], [17, 4.1, 66], [18, 4.1, 39], [19, 4.2, 51]]
+        }, {
+            name: '人文景观',
+            data: [[20, 4.3, 1499], [21, 4.4, 383], [22, 4.1, 341], [23, 4.1, 287], [24, 4.2, 213], [25, 4.1, 251], [26, 4.3, 179], [27, 3.9, 183], [28, 3.9, 51], [29, 4.0, 91], [30, 4.2, 45], [31, 4.1, 46], [32, 4.1, 12], [33, 3.8, 9], [34, 4.2, 20], [35, 3.8, 5], [36, 4.3, 17], [37, 4.1, 90], [38, 4.5, 13], [39, 4.4, 21], [40, 3.8, 51], [41, 3.5, 3], [42, 4.0, 30], [43, 4.0, 25]]
+        }, {
+            name: '休闲娱乐',
+            data: [[44, 4.0, 725], [45, 4.3, 525], [46, 4.4, 336], [47, 4.1, 149], [48, 4.2, 719], [49, 4.4, 1178], [50, 4.2, 477], [51, 4.3, 99], [52, 4.3, 173], [53, 4.3, 281], [54, 4.2, 122], [55, 4.0, 132], [56, 4.5, 86], [57, 4.4, 55], [58, 4.1, 52], [59, 4.4, 28], [60, 3.8, 20]]
+        }]
+    });
+});
+</script>
+<div id="container1" style="height: 380px; min-width: 310px; max-width: 1200px; margin: 0 auto"></div>
+						   </div>
+					  </div>
+			 </div>
+		 </div>
+		   <a class="down scroll" href="#port"><span> </span></a>
+	  </div>
+	  </div>
+	 <!------SKILLS Ends--------->
+		 <!------PORTFOLIO Starts--------->
+		 <div id="port" class="Portfolio">
+			  <div class="Portfolio-section text-center">
+			      <h2><span> </span>人流量<span> </span></h2>
+			  </div>
+			  <div class="container">
+				  <div class="portfolio-grids">
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('#container2').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '旅游人数统计',
+			style:{
+				color: '#FFF'
+			}
+        },
+        xAxis: {
+            categories: ['春', '夏', '秋', '冬']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '人数/万人次'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' +
+                    this.series.name + ': ' + this.y + '<br/>' +
+                    'Total: ' + this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
+		
+		credits:{
+			enabled:false // 禁用版权信息
+		},
+				
+        series: [{
+            name: '景区人数',
+            data: [2062.4, 4493.9, 3136.1, 3103.11]
+        }, {
+            
+            name: '旅店人数',
+            data: [312.7, 409.7, 427.2, 394.3]
+        }]
+    });
+});
+</script>
+<div id="container2" style="min-width: 310px; height: 400px; max-width: 1200px; margin: 0 auto"></div>
+				  <a class="portdown scroll" href="#contact"><span> </span></a>
+				  
+			  </div>
+		 </div>
+  </div>
+  <!------Content Ends-------->
+  
+  <!------FOOTER Starts----------->
+  <div  id="contact" class="footer">
+      <div class="container">
+	  
+		   <div class="contact-section text-center">
+			  <h2><span> </span>天气<span> </span></h2>
+		  </div>
+		 <div class="row">
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('#container3').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '杭州各季度天气情况',
+			style:{
+				color: '#FFF'
+			}
+        },
+        xAxis: {
+            categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '天数'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' +
+                    this.series.name + ': ' + this.y + '<br/>' +
+                    'Total: ' + this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
+		
+		credits:{
+			enabled:false // 禁用版权信息
+		},
+			
+        series: [{
+            name: '多云',
+            data: [15, 11, 11, 11, 14, 16, 18, 8, 13, 21, 17, 19]
+        }, {
+            name: '阴',
+            data: [2, 0, 1, 2, 0, 1, 0, 0, 2, 1, 0, 0]
+        }, {
+            name: '雨雪',
+            data: [4, 16, 15, 15, 15, 13, 12, 22, 15, 4, 12, 5]
+        }, {
+            
+            name: '晴',
+            data: [10, 1, 4, 2, 2, 0, 1, 1, 0, 5, 1, 7]
+        }]
+    });
+});
+</script>
+		 </div>
+	 </div>
+
+<div id="container3" style="min-width: 310px; height: 400px; max-width: 1200px; margin: 0 auto"></div>
+	 <a class="up scroll" href="#top-top"><span> </span></a>
+	  
+ </div>
+ 
+</body>
+</html>

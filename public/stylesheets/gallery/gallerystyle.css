@@ -1,0 +1,113 @@
+/* 
+	Attractions Gallery - General Style 
+*/
+
+
+@font-face {
+    font-family: '方正姚体_GBK';
+    src: url('fonts/方正姚体_GBK.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { 
+	height: 100%; 
+	font-family: Arial, Calibri, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+*, *:after, *:before 
+{ 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/***********************Demo-1 style***********************/
+.demo-1,
+.demo-1:after,
+.demo-1:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.demo-1 {
+    font-family: '方正姚体_GBK', 'Lato', Calibri, Arial, sans-serif;
+    background: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+.demo-1 {
+	height: 100%;
+	position: relative;
+}
+
+/***********************Demo-2 style***********************/
+
+
+.demo-2 {
+	background: #fff;
+	color: #a7a0a2;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: '方正姚体_GBK', Arial, sans-serif;
+}
+
+
+
+.demo-2 a {
+	color: #8e888a;
+	text-decoration: none;
+	outline: none;
+}
+
+.demo-2 a:hover, .demo-2 a:focus {
+	color: #a7a0a2;
+}
+
+.demo-2 img{
+	width: 240px;
+	height: 240px;
+}
+
+/***********************Demo-3 style***********************/
+.demo-3{
+	color: #fff;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: '方正姚体_GBK', Arial, sans-serif;
+}
+
+.demo-3 a, .demo-3 button {
+	outline: none;
+}
+
+.demo-3 a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.demo-3 a:hover, .demo-3 a:focus {
+	color: #333;
+}
+
+.demo-3 img{
+	height:320px;
+	width:100%;
+}

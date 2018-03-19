@@ -1,0 +1,197 @@
+<!---->
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>西湖十景</title>
+		<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+		<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+		<meta name="author" content="CLC" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/gallery/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/gallery/1demo.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/gallery/dragdealer.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/gallery/1component.css" />
+  		<script src="/javascripts/gallery/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="/"><img src="/images/des/logo.png"/></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="/des"><span>Return</span></a></span>
+			</div>
+			<header id="header" class="codrops-header">
+				<h1>西湖十景（左右浏览）</h1>
+				<span class="message">手机模式没有幻灯浏览模式</span>
+				<button class="slider-switch">转换视图</button>
+			</header>
+			<div id="overlay" class="overlay">
+				<div class="info">
+					<h2>浏览指导</h2>
+					<span class="info-drag">左右拉动图片</span>
+					<span class="info-keys">使用键盘箭头</span>
+					<span class="info-switch">上下转换视图</span>
+					<button>我懂了!</button>	
+				</div>
+			</div>
+			<div id="slideshow" class="dragslider">
+				<section class="img-dragger img-dragger-large dragdealer">
+					<div class="handle">
+						<div class="slide" data-content="content-1">
+							<div class="img-wrap"><img src="/images/des/1/1.jpg" alt="img1"/></div>
+							<h2>苏堤春晓<span>俗称苏公堤，为西湖十景之首</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-2">
+							<div class="img-wrap"><img src="/images/des/1/2.jpg" alt="img2"/></div>
+							<h2>曲院风荷 <span>夏日赏荷 雅舍娴人 红袖添香</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-3">
+							<div class="img-wrap"><img src="/images/des/1/3.jpg" alt="img3"/></div>
+							<h2>平湖秋月<span>水水山山处处明明秀秀，晴晴雨雨时时好好奇奇</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-4">
+							<div class="img-wrap"><img src="/images/des/1/4.jpg" alt="img4"/></div>
+							<h2>断桥残雪 <span>瑞雪初霁，西湖银装素裹，白堤横亘雪柳霜桃</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-5">
+							<div class="img-wrap"><img src="/images/des/1/5.jpg" alt="img5"/></div>
+							<h2>柳浪闻莺<span>黄莺飞舞，竞相啼鸣</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-6">
+							<div class="img-wrap"><img src="/images/des/1/6.jpg" alt="img6"/></div>
+							<h2>花港观鱼 <span>承佛光紫气而幽静的植物园林</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-7">
+							<div class="img-wrap"><img src="/images/des/1/7.jpg" alt="img7"/></div>
+							<h2>雷峰夕照<span>翠影雷峰晚日曛，千秋吴越逐烟云</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-8">
+							<div class="img-wrap"><img src="/images/des/1/8.jpg" alt="img8"/></div>
+							<h2>双峰插云 <span>浮图对立晓崔巍，积翠浮空霁蔼迷</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-9">
+							<div class="img-wrap"><img src="/images/des/1/9.jpg" alt="img9"/></div>
+							<h2>南屏晚钟<span>日暮南屏 宁散青烟</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-10">
+							<div class="img-wrap"><img src="/images/des/1/10.jpg" alt="img10"/></div>
+							<h2>三潭印月 <span>西湖第一胜境</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+					</div>
+				</section><!-- /img-dragger-->
+				<!-- Content section -->
+				<section class="pages">
+					<div class="content" data-content="content-1">
+						<h2>苏堤春晓 <span>俗称苏公堤，为西湖十景之首</span></h2>
+						<p>提起苏堤春晓，那桃红柳绿、春意盎然的景象，早以令人心驰神往。正是这条全长2.8公里，见证了900多年沧桑岁月的长堤，把西湖的春天唤醒，从而成为“西湖十景”中的第一名胜。</p>
+					</div>
+					<div class="content" data-content="content-2">
+						<h2>曲院风荷<span>夏日赏荷 雅舍娴人 红袖添香</span></h2>
+						<p>西湖的美，有了荷花的衬托，更显婀娜多姿。曲院风荷，这是一个历史悠久的景点。相传在南宋时，九里松旁的洪春桥畔有一家酿制官酒的作坊，在作坊周围的池塘上种植了许多荷花，每当夏天，微风乍起，荷香与酒香四处飘逸，沁人心脾，“曲院风荷”就由此得名。</p>
+					</div>
+					<div class="content" data-content="content-3">
+						<h2>平湖秋月<span>水水山山处处明明秀秀，晴晴雨雨时时好好奇奇</span></h2>
+						<p>杭州西湖，历来是最佳赏月之地。在白堤西端，就有一处月白风清的地方，那就是西湖十景之一的平湖秋月景区，它背靠孤山，面临西湖的外湖，景观沿湖一排敞开，包括御碑亭、水面平台、四面厅、八角亭、湖天一碧楼等建筑。由于它伸出水面的平台非常宽广，视野十分开阔，所以成为一流赏月胜地。</p>
+					</div>
+					<div class="content" data-content="content-4">
+						<h2>断桥残雪 <span>瑞雪初霁，西湖银装素裹，白堤横亘雪柳霜桃</span></h2>
+						<p>断桥在西湖中占据着得天独厚的位置,它一端跨着北山路，一端联通白公堤，伫立于里西湖和外西湖的分水点上，就象一位西湖的友好使者，迎接着南来北往，进出西湖的四海佳宾。</p>
+					</div>
+					<div class="content" data-content="content-5">
+						<h2>柳浪闻莺<span>黄莺飞舞，竞相啼鸣</span></h2>
+						<p>柳浪闻莺是西湖十景之一，位于西湖东南岸，清波门处，是一座以春花为主景的大花园。分友谊园、闻莺园、聚景园、小南园四个景区。柳丛衬托着紫楠、雪松、广玉兰、梅花等异木名花。</p>
+					</div>
+					<div class="content" data-content="content-6">
+						<h2>花港观鱼 <span>承佛光紫气而幽静的植物园林</span></h2>
+						<p>乘位于苏堤南段以西的花港观鱼公园，在西里湖与小南湖之间的一块半岛上。这里曾经是南宋内侍官卢允升的私家花园，称为卢园，因为花家山的溪水经过这里流入西湖，所以被称作“花港”。清代康熙皇帝玄烨和乾隆皇帝弘历都对花港观鱼情有独钟，康熙题写了景名，乾隆作诗赞美道：“花家山下流花港，花著鱼身鱼嘬花。最是春光萃西子，底须秋水悟南华”。</p>
+					</div>
+					<div class="content" data-content="content-7">
+						<h2>雷峰夕照<span>翠影雷峰晚日曛，千秋吴越逐烟云</span></h2>
+						<p>每当夕阳衔山，暮色渐起，这一带就会显现水天一色、霞光西照的景象。古塔林峦，金碧璀璨，倒映湖面仿佛明镜初开。西湖十景之首“雷峰夕照”由此而来。
+ </p>
+					</div>
+					<div class="content" data-content="content-8">
+						<h2>双峰插云 <span>浮图对立晓崔巍，积翠浮空霁蔼迷</span></h2>
+						<p>巍巍天目山东走，其余脉的一支，遇西湖而分弛南山、北山，形成环抱状的名胜景区，两山之巅即南高峰和北高峰。
+双峰插云、平湖秋月，都是圆明园中仿建的西湖十景。平湖秋月位于圆明园福海西北岸，其东度五孔桥有一倚山高台的四方重檐亭，外悬乾隆御书“两峰插云”匾。当然这里的两峰只是亭两边的人工小山而已。</p>
+					</div>
+					<div class="content" data-content="content-9">
+						<h2>南屏晚钟<span>日暮南屏 宁散青烟</span></h2>
+						<p>南屏是指西湖南面峭壁林立、宛若屏障的南屏山，晚钟是指山下净慈寺内的钟声。
+净慈寺在南屏山麓慧日峰下，寺前有一座钟楼，因南屏山隆起，山中多洞穴，每当暮色苍茫，万籁俱寂，钟声一响，山谷回应。
+唐宋时此钟声就已出名。至明初，因旧钟太小，乃积铜2万多斤，重铸一口大钟，传声悠远，历久方息。
+清康熙南巡时，以为“天将破晓，夜气方清，万籁俱寂，钟声乍起，响入云霄”，曾改“晚钟”为“晓钟”，弄巧成拙，未能流传。
+新中国成立后，又新铸一口2万余斤的铜钟。傍晚时分，沉雄悠远的钟声长鸣，余音回荡，历久不绝，十分动人。</p>
+					</div>
+					<div class="content" data-content="content-10">
+						<h2>三潭印月 <span>西湖第一胜境</span></h2>
+						<p>乘小瀛洲岛在明万历年间（17世纪）浚湖堆土而成，呈“湖中有岛，岛中有湖”的“田”字形格局，是江南水上园林的经典。全岛以亭台楼阁配以传统花木构成色彩绚丽的景致，与岛内外水光云天相映，犹如中国古代神话中的蓬莱仙岛。</p>
+					</div>
+				</section>
+			</div>
+		</div><!-- /container --> 
+		<script src="/javascripts/gallery/dragdealer.js"></script>
+		<script src="/javascripts/gallery/classie.js"></script>
+		<script src="/javascripts/gallery/dragslideshow.js"></script>
+		<script>
+			(function() {
+
+				var overlay = document.getElementById( 'overlay' ),
+					overlayClose = overlay.querySelector( 'button' ),
+					header = document.getElementById( 'header' )
+					switchBtnn = header.querySelector( 'button.slider-switch' ),
+					toggleBtnn = function() {
+						if( slideshow.isFullscreen ) {
+							classie.add( switchBtnn, 'view-maxi' );
+						}
+						else {
+							classie.remove( switchBtnn, 'view-maxi' );
+						}
+					},
+					toggleCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.add( header, 'hide' );
+						}
+					},
+					toggleCompleteCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.remove( header, 'hide' );
+						}
+					},
+					slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), { 
+						// toggle between fullscreen and minimized slideshow
+						onToggle : toggleBtnn,
+						// toggle the main image and the content view
+						onToggleContent : toggleCtrls,
+						// toggle the main image and the content view (triggered after the animation ends)
+						onToggleContentComplete : toggleCompleteCtrls
+					}),
+					toggleSlideshow = function() {
+						slideshow.toggle();
+						toggleBtnn();
+					},
+					closeOverlay = function() {
+						classie.add( overlay, 'hide' );
+					};
+
+				// toggle between fullscreen and small slideshow
+				switchBtnn.addEventListener( 'click', toggleSlideshow );
+				// close overlay
+				overlayClose.addEventListener( 'click', closeOverlay );
+
+			}());
+		</script>
+	</body>
+</html>

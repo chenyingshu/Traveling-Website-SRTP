@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{title}} {%endblock%}
+
+{% block content %}
+<!-- add the movie -->
+<div id="movieContainer" class="container-fluid">
+	<div id="movie" class="container-fluid">
+		<video loop autoplay src="/videos/01.webm" controls="controls"></video>
+	</div>
+	<div id="cover" class="jumbotron">
+		<div class="container">
+			<h1>Hello world!!!</h1>
+		</div>
+	</div>			
+</div>
+{% endblock %}

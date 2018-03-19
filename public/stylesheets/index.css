@@ -1,0 +1,40 @@
+body{
+	padding-top: 50px;
+}
+
+#logo
+{
+	position: relative;
+	height: 40px;
+	margin-right: 0px;
+	margin-top: -12px;
+}
+
+#movieContainer
+{
+	padding:0;
+}
+
+#movie{
+	padding:0;
+	/*height:740px;*/
+	overflow: hidden;
+	background-color: #222;
+}
+
+#cover{
+	position: absolute;
+	padding-top:0;
+	padding-bottom:0;
+	width:100%;
+	top: 50px;
+	z-index: -0.5;	
+	background: rgba(10,10,5,0.6)
+}
+
+video{
+	width:100%;
+	z-index: -1;
+	margin-top: -13.1%;
+	margin-bottom: -13%;
+}

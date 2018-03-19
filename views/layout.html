@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}{{title}}{% endblock %}</title>
+
+  <!-- Bootstrap -->
+	<link rel="stylesheet" href="/stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="/stylesheets/index.css">
+
+	<!-- jQuery and bootstrap -->
+	<script src="/javascripts/jquery.js"></script>
+	<script src="/javascripts/bootstrap.js"></script>
+	<script src="/javascripts/index.js"></script>
+	{% block head %}
+	{% endblock %}
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<!-- changes for mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collasped" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<!-- <span class="icon-bar"></span> -->
+			</button>
+			<a href="#" class="navbar-brand"><img id="logo" src="/images/clc-logo.png" alt=""></a>
+		</div>
+
+		<!-- the navbar itself -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">主页<span class="sr-only">(current)</span></a></li>
+				<li><a href="/des">景点</a></li>
+				<li><a href="/data">数据</a></li>
+				<li><a href="/rec">推荐</a></li>
+				<!-- <li><a href="#">about</a></li> -->
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- main content -->
+{% block content %}{% endblock %}
+{% block foot %}{% endblock %}
+
+</body>
+</html>
